@@ -33,10 +33,10 @@ on:
     branches:
     - $default-branch
   # Run the workflow each day at 5 am on the default branch
-  schedule:
-  - cron: '0 5 * * *'
+  # schedule:
+  # - cron: '0 5 * * *'
   # Run the workflow manually
-  workflow_dispatch:
+  # workflow_dispatch:
 
 jobs:
   xanitizer-security-analysis:
