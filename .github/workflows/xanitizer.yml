@@ -31,7 +31,9 @@ on:
   # Run the workflow on each push to the default branch
   push:
     branches:
-    - $default-branch
+    - master
+  #  branches:
+  #  - $default-branch
   # Run the workflow each day at 5 am on the default branch
   schedule:
   - cron: '0 5 * * *'
