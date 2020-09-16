@@ -33,10 +33,8 @@ on:
     branches:
     - $default-branch
   # Run the workflow each day at 5 am on the default branch
-  # schedule:
-  # - cron: '0 5 * * *'
-  #   branches:
-  #   - $default-branch
+  schedule:
+  - cron: '0 5 * * *'
   # Run the workflow manually
   workflow_dispatch:
 
@@ -60,8 +58,8 @@ jobs:
       # Compile the code for Java projects and get all libraries, e.g. via Maven
       # Please adapt, if your project uses another build system to compile Java source code.
       # Please comment out, if your project does not contain Java source code.
-      # - name: Compile Java code
-      #   run: mvn -B compile
+      - name: Compile Java code
+        run: mvn -B compile
 
       # Install all dependent libraries for JavaScript/TypeScript projects, e.g. via npm
       # Please adapt to run `npm install` in the correct directories.
