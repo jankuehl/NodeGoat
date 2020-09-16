@@ -30,6 +30,8 @@ name: "Xanitizer Security Analysis"
 on:
   # Run the workflow on each push to the default branch
   push:
+    branches:
+    - master
   #   branches:
   #   - $default-branch
   # Run the workflow each day at 5 am on the default branch
